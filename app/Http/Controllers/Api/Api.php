@@ -86,6 +86,8 @@ class ApiController extends Controller
                 $info = $salaryCities[$i]->CITY_NAME;
                 $info1 = $salaryCities[$i]->SALARY;
                 $info2 = $salaryCities[$i]->QLI;
+                $info3 = $salaryCities[$i]->LONGITUDE;
+                $info4 = $salaryCities[$i]->LATITUDE;
                 $color = '#ffffff';
                 if((float)$info2 > 80) {
                     $color = '#0d9600';
@@ -104,6 +106,8 @@ class ApiController extends Controller
                     'City_name' => $info,
                     'Salary' => $info1,
                     'Qli' => $info2,
+                    'Longitude' => $info3,
+                    'Latitude' => $info4,
                     'Color_qli' => $color
                 );
             }

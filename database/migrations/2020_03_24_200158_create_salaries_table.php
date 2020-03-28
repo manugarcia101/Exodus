@@ -17,6 +17,8 @@ class CreateSalariesTable extends Migration
             $table->string('CITY_NAME');
             $table->string('SALARY');
             $table->string('QLI');
+            $table->string('LONGITUDE');
+            $table->string('LATITUDE');
         });
     }
 
