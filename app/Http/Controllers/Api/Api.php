@@ -68,6 +68,35 @@ class ApiController extends Controller
         }
     }
 
+    // Valor de cambio entre dos monedas
+
+    public function getCurrencyChange($actualCurrency, $newCurrency, $secret){
+
+        $auth = true;
+
+        if($secret != 'common_user'){
+            $auth = $this->checkSecret($secret);
+        }
+
+        if($auth == true){
+            // Cambio a dolares de la moneda actual
+            $USDChangeActual = DB::table('currencies')->where('CURRENCY', $actualCurrency)->first();
+            $USDChangeActual = (float) $USDChangeActual->USD_TO_CURRENCY;
+
+            // Cambio a dolares de la moneda deseada
+            $USDChangeNew = DB::table('currencies')->where('CURRENCY', $newCurrency)->first();
+            $USDChangeNew = (float) $USDChangeNew->USD_TO_CURRENCY;
+            
+            // Factor de cambio de la moneda acutal a la moneda deseada
+            $change = $USDChangeNew/$USDChangeActual;
+
+            //Devolver factor de cambio 
+            return $change;
+        } else {
+            echo "Token incorrecto o límite de peticiones alcanzado";
+        }
+    }
+
     // Ciudades con salario medio (para dibujar en el mapa)
 
     public function salaryCities($secret){

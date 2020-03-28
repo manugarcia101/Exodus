@@ -15,6 +15,8 @@ use Illuminate\Http\Request;
 
 Route::get('/currencies/{secret}', 'ApiController@allCurrencies')->name('currency');
 
+Route::get('/currencychange/{actualcurrency}/{newcurrency}/{secret}', 'ApiController@getCurrencyChange')->name('currencychange');
+
 Route::get('/salaries/{secret}', 'ApiController@salaryCities')->name('salaries');
 
 Route::get('/citydata/{city}/{country}/{secret}', 'ApiController@cityData')->name('cityData');
