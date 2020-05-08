@@ -19,6 +19,16 @@ class CreateSalariesTable extends Migration
             $table->string('QLI');
             $table->string('LONGITUDE');
             $table->string('LATITUDE');
+            $table->string('INFRAESTRUCTURE');
+            $table->string('ENVIRONMENT');
+            $table->string('POLLUTION');
+            $table->string('SAFETY');
+            $table->string('HEALTH');
+            $table->string('WOMAN');
+            $table->string('RENT');
+            $table->string('EMPLOYMENT');
+            $table->string('DIVERSITY');
+            $table->string('TRAFFIC');
         });
     }
 

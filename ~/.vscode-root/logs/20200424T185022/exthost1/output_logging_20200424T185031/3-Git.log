@@ -1,0 +1,88 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /opt/lampp/htdocs/tfm
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show :routes/api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/routes/api.php
+> git cat-file -s 3a99783acbe60acd42733d2402e393345d149a58
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :app/api_tokens.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/api_tokens.php
+> git cat-file -s d6f6ded24de2cc2d66310725651441cf360657e9
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :database/migrations/2020_03_28_113245_create_api_tokens_table.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/database/migrations/2020_03_28_113245_create_api_tokens_table.php
+> git cat-file -s 24033272a441f96b26a97100468c4c18022ab500
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
+> git show :routes/api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/routes/api.php
+> git cat-file -s 3a99783acbe60acd42733d2402e393345d149a58
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git show :app/Http/Controllers/Controller.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Controller.php
+> git cat-file -s 03e02a23e29174f0ade820fdb4cdfcec3abf8769
+> git check-ignore -v -z --stdin
+> git show :app/Http/Kernel.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Kernel.php
+> git cat-file -s 88200c04e6b3357b1ec39b4392ceffae98ce9404
+> git check-ignore -v -z --stdin
+> git show :app/Http/Middleware/Cors.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Middleware/Cors.php
+> git cat-file -s 783f9b927ec3daad671fd71958dee4b6045c2fc9
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
+> git show :routes/api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/routes/api.php
+> git cat-file -s 3a99783acbe60acd42733d2402e393345d149a58
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
+> git show :routes/api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/routes/api.php
+> git cat-file -s 3a99783acbe60acd42733d2402e393345d149a58
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
+> git show :routes/api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/routes/api.php
+> git cat-file -s 3a99783acbe60acd42733d2402e393345d149a58
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
+> git show :routes/api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/routes/api.php
+> git cat-file -s 3a99783acbe60acd42733d2402e393345d149a58
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
+> git show :routes/api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/routes/api.php
+> git cat-file -s 3a99783acbe60acd42733d2402e393345d149a58
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s d83785ea7fa80994033a12d635248d1486051d90
