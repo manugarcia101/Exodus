@@ -1,0 +1,71 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /opt/lampp/htdocs/tfm
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s fb462b43d8efcfaa73190474d6953baa062ba290
+> git check-ignore -v -z --stdin
+> git show :app/Http/Controllers/Auth/ForgotPasswordController.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Auth/ForgotPasswordController.php
+> git cat-file -s 6a247fefd088bae6baae483aa27872517393f5fe
+> git show :app/Http/Controllers/Auth/LoginController.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Auth/LoginController.php
+> git cat-file -s b2ea669a0d282114a7875ffe769da416a0c7f18e
+> git show :app/Http/Controllers/Auth/ResetPasswordController.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Auth/ResetPasswordController.php
+> git cat-file -s cf726eecdfe76d0b0e4bd02e42df02c7c31f8bd1
+> git show :app/Http/Controllers/Auth/VerificationController.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Auth/VerificationController.php
+> git cat-file -s 23a43a84d73cf713768c8382731fe4b504b03314
+> git show :app/Http/Controllers/Api/Api.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Controllers/Api/Api.php
+> git cat-file -s fb462b43d8efcfaa73190474d6953baa062ba290
+> git show :app/Http/Middleware/Cors.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Middleware/Cors.php
+> git cat-file -s 40d51feeb36dc5dc5e01cdc954c710181aa4aa7d
+> git show :app/Http/Middleware/Authenticate.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Middleware/Authenticate.php
+> git cat-file -s a4be5c587ecf9c97a662a2fc4a4b7172100b4a45
+> git show :app/Http/Middleware/CheckForMaintenanceMode.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Middleware/CheckForMaintenanceMode.php
+> git cat-file -s 35b9824baefb8118ada8e6d03f62278f00d1028e
+> git show :app/Http/Middleware/Cors.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Middleware/Cors.php
+> git cat-file -s 40d51feeb36dc5dc5e01cdc954c710181aa4aa7d
+> git show :app/Http/Middleware/TrimStrings.php
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/app/Http/Middleware/TrimStrings.php
+> git cat-file -s 5a50e7b5c8bd8a5c853ee7edb8170508f2ff4f86
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show :storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/storage/framework/cache/data/44/d1/44d142505dd1a3b497197e2f459d2aec779e9ed6
+> git cat-file -s c3670f7e3a3cde64a3b2511102cbb080d84234c6
+> git check-ignore -v -z --stdin
+> git show :storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c
+> git ls-files --stage -- /opt/lampp/htdocs/tfm/storage/framework/cache/data/c2/4f/c24f92750673b2169c8cb7bfbc999cfa8457dc7c
+> git cat-file -s b2ae7b939236d8454d3735e9f939b6fab0d0a92b
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin

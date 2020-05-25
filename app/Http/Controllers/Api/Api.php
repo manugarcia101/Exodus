@@ -9,45 +9,6 @@ use Carbon\Carbon;
 
 class ApiController extends Controller
 {
-
-    public function hi(){
-        if(!empty($_SERVER['HTTP_CLIENT_IP'])){
-            //ip from share internet
-            return $_SERVER['HTTP_CLIENT_IP'];
-        }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
-            //ip pass from proxy
-            return $_SERVER['HTTP_X_FORWARDED_FOR'];
-        }else{
-            return $_SERVER['REMOTE_ADDR'];
-        }
-    }
-
-    public function assignToken($apiAddr){
-        $ip = '';
-        if(!empty($_SERVER['HTTP_CLIENT_IP'])){
-            //ip from share internet
-            $ip = $_SERVER['HTTP_CLIENT_IP'];
-        }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
-            //ip pass from proxy
-            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-        }else{
-            $ip =  $_SERVER['REMOTE_ADDR'];
-        }
-          
-        if($apiAddr == $ip || $ip == '127.0.0.1'){
-            $_string = md5($ip);
-            $today = date("Y-m-d");
-            DB::table('api_tokens')->insert(
-                ['token' => $_string, 'sessions' => 0, 'first_session' => $today]
-            );
-            return $_string;
-        } else {
-            echo 'Adresses does not match';
-            $_null = 'null';
-            return $_null;
-        }
-    }
-
     public function checkSecret($secret){
 
         $tokens = DB::select('select * from api_tokens');
